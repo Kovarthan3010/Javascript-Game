@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="heading">
+        <button onclick="instruction()">Instructions</button>
+      <div id="your">
+          <h1>Your Score:</h1>
+          <p id="y_score">0</p>
+          
+      </div>
+      <div id="computer">
+          <h1>Computer score:</h1>
+          <p id="c_score">0</p>
+          
+      </div>
+    </header>
+    <div id="main_cont">
+        
+    <div id="user_side">
+        
+        <img src="./assets/stone.jpg" alt="Stone" id="stone_img" onclick="change_inp('./assets/stone.jpg',1)">
+        <img src="./assets/paper.jpg" alt="Paper" id="paper_img" style="margin-left: 200px;border-radius: 80px;" onclick="change_inp('./assets/paper.jpg',2)">
+        <img src="./assets/scissor.jpg" alt="Scissor" id="scissor_img" onclick="change_inp('./assets/scissor.jpg',3)">
+    </div>
+    <div id="server_side">
+        <div id="server1">
+            <p style="margin-left: 20px;color:white;font-size: larger;">Your Choice</p>
+        <img src="./assets/white.jpg"  id="your_inp">
+        </div>
+        <div id="server2">
+            <p style="margin-left: 33px;color: white;font-size: larger;">Computer</p>
+        <img src="./assets/white.jpg"  id="comp_inp">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
